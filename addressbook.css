@@ -87,5 +87,42 @@ img{
    opacity: 1;
    font-weight: bold;
    padding-left: 20px;
+   }
+
+   .row-content{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      align-items: center;
+      border: 0px solid green;
+      padding-top: 10px;
+   }
+   .row-content2{
+      flex-direction: column;
+     padding: 100px;
+   }
+
+
+   .label{
+      min-width: 140px;
+   }
    
-}
+   label{
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+   }
+   
+   .text{
+      font-size: 16px;
+      color: #42515f;
+      opacity: 1;
+      font-family: Roboto;
+   }
+   
+   .input{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+   }
