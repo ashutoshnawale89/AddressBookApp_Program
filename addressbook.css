@@ -135,6 +135,7 @@ label{
    justify-content: left;
    display: flex;
    margin-bottom: 2em;
+   width: 100px;
 }
 .reset{
    justify-content: flex-end;
