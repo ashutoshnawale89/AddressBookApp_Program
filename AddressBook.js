@@ -2,7 +2,7 @@
 window.onload = function(){
 
   //Buttons
-var reset = document.getElementById('Cancel');
+var resetbtn = document.getElementById('Cancel');
 	var AddBtn = document.getElementById('Add');
 
   // Form Fields  ***************************************
@@ -17,7 +17,7 @@ var zip = document.getElementById('pincode1');
 
   // Array For  Store Multiple  Values
   var addressBook = [];
-
+  resetbtn.addEventListener("click",clearForm);
   AddBtn.addEventListener("click", addToBook);
 
 
@@ -54,8 +54,6 @@ function validation(){
   let addressRegex = /^[A-Z]{1}[a-zA-Z0-9./]{5,}$/;
   let Number = /[9]?[1]?[6-9]{1}[0-9]{9}$/;
   let PinCode=/^[0-9]{6}$/;
-
-  let nameError=document.getElementById('name-err');
 
 if(firstNameRegex.test(fullname.value)){
   if(addressRegex.test(address.value)){
