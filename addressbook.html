@@ -17,7 +17,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./AddressBook.css">
-    <script src="/AddressBook.js"></script>
+    <script type="text/javascript" src="/AddressBook.js"></script>
 </head>
 <body>
     <header class="headerContent">
@@ -34,7 +34,7 @@
         </div>
     </header>
         <div class="formContent">
-        <form class="form" onsubmit="return validation()">
+        <div class="form">
         <div class="main-content">
             <div class="header-content"> 
                 <div class="book-detail-text"> 
@@ -47,18 +47,16 @@
             <div class="row-content">
                 <label class="label text" for="name">FullName :  </label>
                 <input id="name1" class="input" type="text" name="name" placeholder="Your Full Name...." required>
-                <error-output id="name-err" for="text">"** UserName Is Invalid"</error-output>
               </div>
 
               <div class="row-content">
                 <label class="label text" for="address">Address : </label>
                 <textarea class="input" id="address1" name="Address.." style="height: 100px;"></textarea>
-                <error-output id="name-err" for = "text">"** Address Is Invalid"</error-output>
               </div>
 
               <div class="row-content">
                 <label class="label text" for="startDate">State</label>
-                  <select id="state" name="State">
+                  <select id="state" name="State" class="input">
                     <option value="1">Andhra Pradesh</option>
                     <option value="2">Arunachal Pradesh</option>
                     <option value="3">Assam</option>
@@ -105,21 +103,19 @@
                 <div class="row-content">
                     <label class="label text" for="pincode">Pincode : </label>
                     <input class="input" type="text" name="pincode" id="pincode1" placeholder="Enter Pincode...." style="width:100px ;" required>
-                    <error-output id="name-err" for="text">"** Pincode Is Invalid"</error-output>
-                </div>
+                  </div>
               <div class="row-content">
                 <label class="label text" for="number">Phone-Number</label>
                 <input class="input" type="text" name="number" id="number1" placeholder="Phone-Number...." style="width:200px "required>
-                <error-output id="name-err" for="text">"** PhooneNumber Is Invalid"</error-output>
               </div>
               
                 <div class="reset">
-                    <button type="reset" class="btn btn-primary" style="background-color:red ;">Reset</button>
+                    <button type="reset" class="btn btn-primary" style="background-color:red ;" id="Cancel">Reset</button>
                     <error-output class="button"></error-output>
-                <button type="submit" name="" class="btn btn-primary">SUBMIT</button>
+                <button type="submit" name="" class="btn btn-primary" id="Add">SUBMIT</button>
                 </div>
               </div>
-        </form> 
+        </div> 
     </div>
 </body>
 </html>
